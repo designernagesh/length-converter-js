@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Javascript: Length Converter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@700;800;900&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrapper">
+  <div class="container">
+    <h1 class="display-3 text-danger">Length Converter </h1>
+    <p class="lead">Fill the length in any unit and convert it in different units 🙂!</p>
+
+      <form class="form-inline">
+        <div class="form-row">        
+          <div class="col-sm-4">
+            <label>Total Length</label>
+            <input type="text" placeholder="Length..." class="form-control" id="input" />
+          </div>
+
+          <div class="col-sm-4">
+            <label>Length in</label>
+            <select class="form-control" id="fromLength">
+              <option value="Feet">Feet</option>
+              <option value="Inches">Inches</option>
+              <option value="Yards">Yards</option>
+              <option value="Miles">Miles</option>
+              <option value="Meters">Meters</option>
+              <option value="Centimeters">Centimeters</option>
+              <option value="Kilometers">Kilometers</option>            
+            </select>
+          </div>        
+
+          <div class="col-sm-4">
+            <label>Convert to</label>
+            <select class="form-control" id="toLength">
+              <option value="Feet">Feet</option>
+              <option value="Inches">Inches</option>
+              <option value="Yards">Yards</option>
+              <option value="Miles">Miles</option>
+              <option value="Meters">Meters</option>
+              <option value="Centimeters">Centimeters</option>
+              <option value="Kilometers">Kilometers</option>
+            </select>  
+          </div>      
+
+          <div class="col-sm-12 result my-4">
+            <input type="text" class="form-control" id="result" value="Answer is..." />          
+          </div>
+        </div>
+      </form>
+   </div>   
+  <script src="script.js"></script>
+</body>
+</html>
